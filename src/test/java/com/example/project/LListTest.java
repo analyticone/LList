@@ -44,7 +44,8 @@ class LListTest
 	@Test
 	void testSize()
 	{
-		fail("Not yet implemented"); // TODO
+		assertEquals(2, new LList<Integer>(new Integer[] {1,0,0,1}).count(1));
+		assertEquals(0, new LList<Integer>(new Integer[] {1,0,0,1}).count(99));
 	}
 
 	@Test

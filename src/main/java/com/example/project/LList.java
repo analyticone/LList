@@ -103,7 +103,16 @@ public class LList<T>
 
 	public T[] toArray()
 	{
-		return null;
+		int count = 0;
+		for (Node ptr = head; ptr != null; ptr = ptr.next)
+			++count;
+			
+		T[] array = (T[]) new Object[count];
+		int index = 0;
+		
+		for (Node ptr = head; ptr != null; ptr = ptr.next)
+			array[index++]  = ptr.item;
+		return array;
 	}
 	
 	public boolean replace(T oldItem, T newItem)

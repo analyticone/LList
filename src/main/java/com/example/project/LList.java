@@ -54,7 +54,7 @@ public class LList<T>
 	
 	public int getIndex()
 	{
-		return -1;
+		return -100;
 	}
 	
 	private Node getPredecessor(T item)

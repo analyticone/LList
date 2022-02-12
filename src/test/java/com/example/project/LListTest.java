@@ -151,13 +151,13 @@ class LListTest
 	void testToArray()
 	{
 		Integer[] x = new Integer[] { 1 };
-		assertArrayEquals("single element array", x, new LList<Integer>(x).toArray());
+		assertArrayEquals(x, new LList<Integer>(x).toArray());
 
 		Integer[] x1 = new Integer[] {};
-		assertArrayEquals("zero element array", x1, new LList<Integer>(x1).toArray());
+		assertArrayEquals(x1, new LList<Integer>(x1).toArray());
 
 		Integer[] x2 = new Integer[] { 1, 2, 3 };
-		assertArrayEquals("zero element array", x2, new LList<Integer>(x2).toArray());
+		assertArrayEquals(x2, new LList<Integer>(x2).toArray());
 	}
 
 	@Test

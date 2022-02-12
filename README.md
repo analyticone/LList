@@ -16,7 +16,7 @@ Method Signature 	  | Description
 +size():int	|	Return the length of the list
 +count(item:T):int	|	Return the number of occurrences of a given object of type T in the linked list. 
 +delete(item:T):T	|	Delete item from the list and return a reference to that object or null if the deletion did not take place
-+insertAt(index:int,item:T):boolean	|	Insert an item at position index, where index is passed to the method. Return true if the insertions took place and false if not (e.g., index out of bounds)
++insertAt(index:int,item:T):boolean	|	Insert an item at position index, where index is passed to the method. Return true if the insertion took place and false if not (e.g., index out of bounds)
 +toArray():T[]	|	Return an array of Ts that contains all of the Ts in the list 
 +replace(oldItem:T,newItem:T):boolean	|	Replace the first occurrence of a given T oldItem with another given T newItem. Return true if the value was replaced.
 +replaceAll(oldItem:T,newItem:T):boolean	|	Replace all occurrences of a given T oldItem with another given T newItem. Return true if any values were replaced. 
